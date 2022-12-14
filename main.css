@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    scroll-behavior: smooth;
+    background: rgb(33, 33, 82);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    color: grey;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    color: rgb(248, 237, 26);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#task-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input,
+#date-input{
+    flex: 1 1 0%;
+    background-color: wheat;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+#task-submit{
+    color: black;
+    font-size: 1.3rem ;
+    color: gold;
+    font-weight: 700;
+    cursor: pointer;
+}
+#task-submit:hover{
+    color: orangered;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    color: gold;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-bottom: 1rem;
+    
+    
+    font-variant: small-caps;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+    color: rgb(27, 25, 27);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    background-image: linear-gradient(to left, green, gold); 
+}
+
+.task .actions button:hover{
+    color: white;
+}
+span{
+    color: white;
+    text-align: center;
+}
